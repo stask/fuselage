@@ -55,5 +55,5 @@
                 :compiler {:main {{namespace}}.core
                            :output-to "resources/public/js/compiled/app.js"
                            :optimizations :advanced
-                           :clojure-defines {goog.DEBUG false}
+                           :closure-defines {goog.DEBUG false}
                            :pretty-print false}}]})
