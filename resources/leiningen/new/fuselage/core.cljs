@@ -4,7 +4,7 @@
    [re-frame.core :refer [dispatch]]
    [devtools.core :as devtools]
    [{{namespace}}.config :as config]
-   [{{namespace}}.handlers]
+   [{{namespace}}.events]
    [{{namespace}}.subs]
    [{{namespace}}.views :refer [main-panel]]))
 

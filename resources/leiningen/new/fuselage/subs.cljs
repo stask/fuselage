@@ -2,7 +2,7 @@
   (:require
    [re-frame.core :as re-frame]))
 
-(reg-sub
+(re-frame/reg-sub
  :signed-in?
  (fn [db _]
    (boolean (:auth-token db))))

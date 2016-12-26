@@ -1,7 +1,8 @@
 (ns {{namespace}}.events
   (:require
    [re-frame.core    :as re-frame]
-   [{{namespace}}.db :refer [default-value state->local-store]]))
+   [{{namespace}}.db     :refer [default-value state->local-store]]
+   [{{namespace}}.config :as config]))
 
 ;; this interceptor stores the state in local storage
 ;; we attach it to each event handler which could update the state

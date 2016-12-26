@@ -3,17 +3,18 @@
   :url "TODO: FIXME"
   :min-lein-version "2.7.0"
 
-  :dependencies [[org.clojure/clojure            "1.8.0"]
+  :dependencies [[org.clojure/clojure            "1.9.0-alpha14"]
                  [org.clojure/tools.logging      "0.3.1"]
-                 [org.clojure/tools.reader       "1.0.0-beta3"]
-                 [com.stuartsierra/component     "0.3.1"]
+                 [org.clojure/tools.reader       "1.0.0-beta4"]
+                 [com.stuartsierra/component     "0.3.2"]
                  [funcool/catacumba              "1.2.0"]
-                 [ch.qos.logback/logback-classic "1.1.7"]
+                 [ch.qos.logback/logback-classic "1.1.8"]
                  [org.clojure/core.async         "0.2.395"]
                  ;; client
-                 [org.clojure/clojurescript "1.9.293"]
-                 [re-frame                  "0.9.0"]
-                 [binaryage/devtools        "0.8.3"]]
+                 [org.clojure/clojurescript  "1.9.293"]
+                 [re-frame                   "0.9.1"]
+                 [com.cognitect/transit-cljs "0.8.239"]
+                 [binaryage/devtools         "0.8.3"]]
 
   :plugins [[lein-cljsbuild "1.1.4"]]
 
@@ -21,7 +22,8 @@
                        :hooks [leiningen.cljsbuild]}
              :dev {:dependencies [[org.clojure/tools.namespace "0.2.10"]
                                   [figwheel-sidecar            "0.5.8"]
-                                  [com.cemerick/piggieback     "0.2.1"]]
+                                  [com.cemerick/piggieback     "0.2.1"]
+                                  [org.clojure/test.check      "0.9.0"]]
                    :source-paths ["dev"]
                    :plugins [[lein-figwheel "0.5.8"]]}}
 
