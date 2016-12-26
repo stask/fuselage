@@ -1,0 +1,19 @@
+* fuselage
+
+  A Leiningen template for Clojure/ClojureScript applications.
+
+  The resulting application will use following:
+
+  - [[https://github.com/funcool/catacumba][catacumba]] for http
+    The main reason for using catacumba is that it has built-in support for doing async stuff using core.async.
+  - [[https://github.com/Day8/re-frame][re-frame]] for UI
+    Very nice React-based UI framework. Read the readme, it's well written.
+  - [[https://github.com/bhauman/lein-figwheel][figwheel]] for interactive UI development
+    Just use it. Read the readme, watch the screencast.
+
+  Don't forget to update dependencies after you generate the new app. One way to do it is to use [[https://github.com/xsc/lein-ancient][lein-ancient]] leiningen plugin.
+
+* Stuff to do
+
+** TODO Use something better than CSS
+   Probably [[https://github.com/noprompt/garden][garden]]. Never used it but anything is better than raw CSS.
