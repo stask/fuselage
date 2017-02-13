@@ -8,7 +8,8 @@
 
 (defn fuselage
   "Generates new application."
-  [name]
+  [name & opts]
+  (println "params:" opts)
   (let [render  (renderer "fuselage")
         main-ns (sanitize-ns name)
         data    {:raw-name       name
