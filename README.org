@@ -13,6 +13,13 @@
 
   Don't forget to update dependencies after you generate the new app. One way to do it is to use [[https://github.com/xsc/lein-ancient][lein-ancient]] leiningen plugin.
 
+** how to use
+
+   - clone this repo
+   - cd fuselage && lein install
+   - cd <some folder where you want to create your new project> && lein new fuselage <name of your project>
+     You can use either names like 'my-test-project' or fully qualified names like 'com.blah/my-test-project'. If you use the later, the name of the project will still be 'my-test-project', but all the namespaces inside will have fully qualified names.
+
 * Stuff to do
 
 ** TODO Use something better than CSS

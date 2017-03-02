@@ -1,4 +1,4 @@
-(defproject fuselage/lein-template "0.1.0-SNAPSHOT"
+(defproject fuselage/lein-template "0.1.0"
   :description "Leiningen template for Clojure/ClojureScript applications"
   :url "https://github.com/stask/fuselage/"
 

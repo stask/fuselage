@@ -8,24 +8,24 @@
                  [org.clojure/tools.reader       "1.0.0-beta4"]
                  [com.stuartsierra/component     "0.3.2"]
                  [funcool/catacumba              "1.2.0"]
-                 [ch.qos.logback/logback-classic "1.1.8"]
-                 [org.clojure/core.async         "0.2.395"]
+                 [ch.qos.logback/logback-classic "1.2.1"]
+                 [org.clojure/core.async         "0.3.441"]
                  ;; client
-                 [org.clojure/clojurescript  "1.9.293"]
-                 [re-frame                   "0.9.1"]
+                 [org.clojure/clojurescript  "1.9.495"]
+                 [re-frame                   "0.9.2"]
                  [com.cognitect/transit-cljs "0.8.239"]
-                 [binaryage/devtools         "0.8.3"]]
+                 [binaryage/devtools         "0.9.2"]]
 
-  :plugins [[lein-cljsbuild "1.1.4"]]
+  :plugins [[lein-cljsbuild "1.1.5"]]
 
   :profiles {:uberjar {:aot :all
                        :hooks [leiningen.cljsbuild]}
              :dev {:dependencies [[org.clojure/tools.namespace "0.2.10"]
-                                  [figwheel-sidecar            "0.5.8"]
+                                  [figwheel-sidecar            "0.5.9"]
                                   [com.cemerick/piggieback     "0.2.1"]
                                   [org.clojure/test.check      "0.9.0"]]
                    :source-paths ["dev"]
-                   :plugins [[lein-figwheel "0.5.8"]]}}
+                   :plugins [[lein-figwheel "0.5.9"]]}}
 
   :clean-targets ^{:protect false} ["resources/public/js/compiled"
                                     :target-path]
